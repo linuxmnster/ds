@@ -5,9 +5,7 @@ def mergesort(array):
         rightlist=array[mid:] 
         mergesort(leftlist) 
         mergesort(rightlist) 
-        i=0 
-        j=0 
-        k=0 
+        i = j = k = 0
         while(i<len(leftlist) and j<len(rightlist)): 
             if(leftlist[i]<rightlist[j]): 
                 array[k]=leftlist[i] 
