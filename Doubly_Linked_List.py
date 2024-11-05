@@ -12,9 +12,7 @@ class DoublyLinkedList:
     def addNode(self, data):   
         newNode = Node(data)   
         if self.head is None:   
-            self.head = self.tail = newNode   
-            self.head.previous = None   
-            self.tail.next = None   
+            self.head = self.tail = newNode  
         else:   
             self.tail.next = newNode   
             newNode.previous = self.tail   
