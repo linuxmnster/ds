@@ -21,11 +21,11 @@ class SinglyLinkedList:
         current = self.head   
         if(self.head == None):   
             print("List is empty")   
-            return;   
-        print("Nodes of singly linked list: ")   
-        while(current != None):    
-            print(current.data)   
-            current = current.next 
+        else:
+            print("Nodes of singly linked list: ")   
+            while(current != None):    
+                print(current.data)   
+                current = current.next 
 
 sList = SinglyLinkedList()   
   
